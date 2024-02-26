@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-calc-app</title>
+    <!-- style file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-data">
+            <h1 class="title">Student Grade Desk</h1>
+            <div class="student-info">
+                <label for="student">Student Name:</label>
+                <input type="text" id="student" name="studentName" placeholder="Name" />
+            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        JavaScript
+                    </td>
+                    <td><input type="number" id="JavaScript" name="marks1" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Java
+                    </td>
+                    <td><input type="number" id="Java" name="marks2" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>
+                        .Net
+                    </td>
+                    <td><input type="number" id="Net" name="marks3" min="0" max="100"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <button id="showResult">Result</button>
+        </div>
+        <div id="result-status" style="display: none;">
+            <h3 id="st-name"></h3>
+            <p class="js">JavaScript:<span id="jsresult"></span></p>
+            <p class="java">Java:<span id="javaresult"></span></p>
+            <p class="net">.Net:<span id="netresult"></span></p>
+            <p class="avr_marks">Average Score:<spn id="average"></spn></p>
+            <p class="grede_show">Grade:<span id="grade"></span></p>
+        </div>
+    </div>
+
+    <!-- script file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
