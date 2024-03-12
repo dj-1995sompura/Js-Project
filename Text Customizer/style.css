@@ -1,0 +1,128 @@
+.hidden{
+    display: none;
+}
+
+.main {
+    background: linear-gradient(45deg, black, transparent);
+    color: #fff;
+}
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.input_section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.input_box {
+    width: 50%;
+}
+
+.container {
+    max-width: 900px !important;
+    margin: auto;
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event_handler {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    background: #dbb1b11c;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.output_section {
+    display: block;
+    border: 1px solid;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.output_section p{
+    margin-left: 10px;
+}
+textarea.form-control {
+    border-color: #000;
+}
+
+.trukValues {
+    display: none;
+    margin: 10px;
+    max-width: 300px;
+}
+
+button.sub-button {
+    width: 30%;
+    margin-right: 0;
+}
+
+.trukValues label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.trunk_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+
+
+
+/* media query for responsive layout */
+@media screen and (max-width:998px) {
+    /* .container{
+        height: auto;
+    } */
+    .output_section {
+        margin-top: 30px;
+        margin-bottom: 50px 
+    }
+    
+    
+    h1.title {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    /* .container{
+        height: 110vh;
+    } */
+    .input_section {
+        flex-direction: column;
+    }
+    
+    .input_box {
+        width: Calc(100% - 15px);
+    }
+    
+    .event_handler {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    
+}

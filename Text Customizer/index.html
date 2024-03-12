@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1 class="title">Text Modifier</h1>
+        <div class="input_section">
+          <div class="input_box">
+            <div class="input-group">
+              <textarea
+                class="form-control"
+                id="InputText"
+                aria-label="With textarea"
+                rows="10"
+                placeholder="Input content here......"
+              ></textarea>
+            </div>
+          </div>
+          <div class="event_handler">
+            <button type="button" id="lenger" class="btn btn-primary">
+              Lenger
+            </button>
+            <div class="trukValues">
+              <div class="trunk_input">
+                <label for="trunkSize">Limit length</label>
+                <input type="text" id="limitLength" value="" />
+              </div>
+            </div>
+            <button type="button" id="worder" class="btn btn-secondary">
+              Worder
+            </button>
+            <div class="trukValues">
+              <div class="trunk_input">
+                <label for="trunkSize">Limit Words</label>
+                <input type="text" id="limitWord" value="" />
+              </div>
+            </div>
+            <button type="button" id="multiply" class="btn btn-success">
+              Multiply
+            </button>
+            <div class="trukValues">
+              <div class="trunk_input">
+                <label for="trunkSize">Duplicate Times</label>
+                <input type="text" id="copyTimes" value="" />
+              </div>
+            </div>
+            <button type="button" id="Arrayer" class="btn btn-info">
+              Arrayer
+            </button>
+            <div class="trukValues">
+              <div class="trunk_input">
+                <label for="trunkSize">Array Length</label>
+                <input type="text" id="arrMaker" value="" />
+              </div>
+            </div>
+            <!-- <button type="button" id="grammrer" class="btn btn-success">
+              Grammer Correction
+            </button> -->
+          </div>
+        </div>
+        <div class="output_section">
+          <p class="result">Show your Output...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="grammer.js"></script> -->
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
